@@ -37,5 +37,10 @@ Then, a simple entry in your simplesamlphp config is all you need.
       'client_id' => 'yourclientid.apps.googleusercontent.com',
       'client_secret' => 'Your Secret',
       'developer_key' => 'Your API Key',
+      # Optional value, default is 'profile' and 'email'
+      'scopes' => array(
+	'openid',
+	'profile',
+	'email',
     ),
 ```

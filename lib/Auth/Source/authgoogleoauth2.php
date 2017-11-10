@@ -31,12 +31,10 @@ class sspmod_authgoogleoauth2_Auth_Source_authgoogleoauth2 extends SimpleSAML_Au
     $this->google_client->setClientSecret($cfgParse->getString('client_secret'));
     $this->google_client->setRedirectUri($redirect_url);
     $this->google_client->setDeveloperKey($cfgParse->getString('developer_key'));
-    $this->google_client->setScopes(
-      array(
-        'https://www.googleapis.com/auth/userinfo.profile',
-        'https://www.googleapis.com/auth/userinfo.email'
-      )
-    );
+
+    # Get customized scopes, if they are not defined in configuration, then use default scopes for oauth2: profile, email
+    $this->google_client->setScopes($cfgParse->getArray('scopes', array('profile', 'email')));
+
     $this->google_client->setAccessType('online');
     $this->google_client->setApprovalPrompt('force');
   }
