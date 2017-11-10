@@ -1,5 +1,5 @@
 {
-  "name": "rgeyer/simplesamlphp-authgoogleoauth2",
+  "name": "cesnet/simplesamlphp-module-authgoogleoauth2",
   "description": "A SimpleSAMLPHP module which allows authentication against Google OAuth2",
   "type": "simplesamlphp-module",
   "keywords": ["google","oauth2","simplesamlphp"],
@@ -8,8 +8,12 @@
     {
       "name": "Ryan J. Geyer",
       "email": "me@ryangeyer.com"
+    },
+    {
+      "name": "Michal Prochazka",
+      "email": "michalp@ics.muni.cz"
     }
-  ],
+ ],
   "require": {
     "php": ">=5.4.0",
     "google/apiclient": "1.1.2"
