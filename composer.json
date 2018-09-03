@@ -1,6 +1,7 @@
 {
   "name": "cesnet/simplesamlphp-module-authgoogleoauth2",
   "description": "A SimpleSAMLPHP module which allows authentication against Google OAuth2",
+  "version": "1.0.0",
   "type": "simplesamlphp-module",
   "keywords": ["google","oauth2","simplesamlphp"],
   "license": "MIT",
