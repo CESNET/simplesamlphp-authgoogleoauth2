@@ -1,4 +1,9 @@
 # simplesamlphp-authgoogleoauth2
+
+##### This repository is forked from [rgeyer]
+
+[rgeyer]:https://github.com/rgeyer/simplesamlphp-authgoogleoauth2
+
 An authentication module for simplesamlphp which authenticates against Google OAuth2
 
 I created this largely because of Google's OpenID 2.0 deprecation. I used OpenID for authentication to RightScale,
